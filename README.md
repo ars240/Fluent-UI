@@ -2,11 +2,10 @@
 
 ## Load
 ```lua
-local LoadLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ars240/Fluent-UI/main/fluent.lua"))
-if type(LoadLib) == "function" then LoadLib() end
-local UI = Fluent or _G.Fluent
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ars240/Fluent-UI/main/fluent.lua"))()
+local UI = Fluent
 ```
-Matcha's `loadstring` runs the code right away and returns nothing, so `loadstring(...)()` errors. The library sets the global `Fluent`.
+Matcha's `loadstring` doesn't pass back return values, so use the global `Fluent`.
 
 ## Window
 ```lua
