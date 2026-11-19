@@ -1,7 +1,4 @@
-if Fluent and Fluent.Stop then pcall(function() Fluent:Stop() end) end
-
-local LoadLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ars240/Fluent-UI/main/fluent.lua"))
-if type(LoadLib) == "function" then LoadLib() end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ars240/Fluent-UI/main/fluent.lua"))()
 local UI = Fluent
 
 local Window = UI:CreateWindow({
